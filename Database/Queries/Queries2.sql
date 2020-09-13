@@ -1,5 +1,5 @@
 /**
-	Query hierarchy of countries with following details: use LEFT JOIN
+	Query hierarchy of countries with following details: use LEFT JOIN, changed again
 	- Continent ID
 	- Continent Name
 	- Country ID
