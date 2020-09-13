@@ -1,0 +1,20 @@
+USE [HRDB]
+GO
+PRINT 'Creating dbo.State...'
+GO
+CREATE TABLE dbo.State
+(
+  ID				INT IDENTITY (1, 1) NOT NULL ,
+  Code				NVARCHAR(10)		NOT NULL ,
+  Name				NVARCHAR(100)		NOT NULL ,
+  CountryID			INT					NOT NULL 
+)
+GO
+ALTER TABLE dbo.State ADD CONSTRAINT PK_State PRIMARY KEY (ID)
+GO
+ALTER TABLE dbo.State ADD CONSTRAINT UK_State_1 UNIQUE (Code)
+GO
+ALTER TABLE dbo.State ADD CONSTRAINT FK_State_CountryID FOREIGN KEY (CountryID) REFERENCES dbo.Country(ID)
+GO
+PRINT 'Created dbo.State.'
+GO

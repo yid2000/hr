@@ -1,0 +1,10 @@
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Types\StudentInfo.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Triggers\trg_ProgressReport.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Functions\ScalarFunctions\fn_GetFullName.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Functions\TableValueFunctions\TFN_SplitString.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Functions\TableValueFunctions\TFN_SplitInt.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Views\v_StudentDetails.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Views\v_TeacherDetails.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Views\v_StudentTeacherDetails.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Views\v_ProgressReportDetails.sql
+:r C:\Me\Tech\LK\SqlServer\HRDB\Code\Views\v_ProgressReportDetailsByTeacher.sql

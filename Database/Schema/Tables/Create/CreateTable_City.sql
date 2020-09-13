@@ -1,0 +1,19 @@
+USE [HRDB]
+GO
+PRINT 'Creating dbo.City...'
+GO
+CREATE TABLE dbo.City
+(
+  ID				INT IDENTITY (1, 1) NOT NULL ,
+  Name				NVARCHAR(100)		NOT NULL ,
+  StateID			INT					NOT NULL 
+)
+GO
+ALTER TABLE dbo.City ADD CONSTRAINT PK_City PRIMARY KEY (ID)
+GO
+ALTER TABLE dbo.City ADD CONSTRAINT UK_City_1 UNIQUE (Name, StateID)
+GO
+ALTER TABLE dbo.City ADD CONSTRAINT FK_City_StateID FOREIGN KEY (StateID) REFERENCES dbo.State(ID)
+GO
+PRINT 'Created dbo.City.'
+GO
