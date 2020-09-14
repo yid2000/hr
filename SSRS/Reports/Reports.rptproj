@@ -15,6 +15,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>EmployeeDrilldown.rdl</Name>
+      <FullPath>EmployeeDrilldown.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>EmployeeList.rdl</Name>
       <FullPath>EmployeeList.rdl</FullPath>
     </ProjectItem>
@@ -27,20 +31,20 @@
       <FullPath>PaycheckSummaryByEmp.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>EmployeeDrilldown.rdl</Name>
-      <FullPath>EmployeeDrilldown.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>SimpleReport.rdl</Name>
-      <FullPath>SimpleReport.rdl</FullPath>
+      <Name>Regions.rdl</Name>
+      <FullPath>Regions.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>RegionsDrilldown.rdl</Name>
       <FullPath>RegionsDrilldown.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Regions.rdl</Name>
-      <FullPath>Regions.rdl</FullPath>
+      <Name>SimpleReport.rdl</Name>
+      <FullPath>SimpleReport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>LocationsDrilldown.rdl</Name>
+      <FullPath>LocationsDrilldown.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

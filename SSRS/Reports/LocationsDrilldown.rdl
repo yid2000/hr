@@ -9,10 +9,12 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>RegionsDrilldown</Value>
+                <Value>Locations Drilldown</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
-                  <FontSize>18pt</FontSize>
+                  <FontSize>20pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>SteelBlue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -20,8 +22,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox1</rd:DefaultName>
-        <Height>0.33in</Height>
-        <Width>5in</Width>
+        <Height>0.37in</Height>
+        <Width>6in</Width>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -33,12 +35,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>5in</Width>
+              <Width>6.225in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.12in</Height>
+              <Height>1.14in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -54,7 +56,8 @@
                                   <Value>=Fields!ContinentName.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontSize>14pt</FontSize>
+                                    <Color>Maroon</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -62,8 +65,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>ContinentName</rd:DefaultName>
-                          <Height>0.24in</Height>
-                          <Width>5in</Width>
+                          <Height>0.27in</Height>
+                          <Width>6in</Width>
                           <Style>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -75,16 +78,19 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>1in</Width>
+                                <Width>1.44167in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1in</Width>
+                                <Width>1.275in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1in</Width>
+                                <Width>1.15833in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1in</Width>
+                                <Width>0.90833in</Width>
+                              </TablixColumn>
+                              <TablixColumn>
+                                <Width>1.44167in</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -100,16 +106,18 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>Country Name</Value>
+                                                <Value>Country </Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
                                                   <FontSize>11pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
-                                                  <Color>White</Color>
+                                                  <Color>Yellow</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox2</rd:DefaultName>
@@ -118,43 +126,7 @@
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>CornflowerBlue</BackgroundColor>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
-                                      <Textbox Name="textbox4">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>State Code</Value>
-                                                <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>11pt</FontSize>
-                                                  <FontWeight>Bold</FontWeight>
-                                                  <Color>White</Color>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style />
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>textbox4</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>LightGrey</Color>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <BackgroundColor>CornflowerBlue</BackgroundColor>
+                                          <BackgroundColor>SteelBlue</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -172,16 +144,18 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>State Name</Value>
+                                                <Value>State </Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
                                                   <FontSize>11pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
-                                                  <Color>White</Color>
+                                                  <Color>Yellow</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox5</rd:DefaultName>
@@ -190,7 +164,7 @@
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>CornflowerBlue</BackgroundColor>
+                                          <BackgroundColor>SteelBlue</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -208,16 +182,18 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>City Name</Value>
+                                                <Value>City </Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
                                                   <FontSize>11pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
-                                                  <Color>White</Color>
+                                                  <Color>Yellow</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox6</rd:DefaultName>
@@ -226,7 +202,83 @@
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>CornflowerBlue</BackgroundColor>
+                                          <BackgroundColor>SteelBlue</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="textbox7">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Location Code</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontSize>11pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>Yellow</Color>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>textbox7</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <BackgroundColor>SteelBlue</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="textbox8">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Location Name</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontSize>11pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>Yellow</Color>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>textbox8</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <BackgroundColor>SteelBlue</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -252,6 +304,8 @@
                                                 <Value>=Fields!CountryName.Value</Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -264,7 +318,7 @@
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>#8fb3f3</BackgroundColor>
+                                          <BackgroundColor>#6e9eca</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -275,7 +329,7 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="textbox7">
+                                      <Textbox Name="textbox10">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
@@ -285,19 +339,21 @@
                                                 <Value />
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>textbox7</rd:DefaultName>
+                                        <rd:DefaultName>textbox10</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>#8fb3f3</BackgroundColor>
+                                          <BackgroundColor>#6e9eca</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -308,7 +364,7 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="textbox8">
+                                      <Textbox Name="textbox11">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
@@ -318,19 +374,21 @@
                                                 <Value />
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>textbox8</rd:DefaultName>
+                                        <rd:DefaultName>textbox11</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>#8fb3f3</BackgroundColor>
+                                          <BackgroundColor>#6e9eca</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -341,7 +399,7 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="textbox9">
+                                      <Textbox Name="textbox12">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
@@ -351,19 +409,56 @@
                                                 <Value />
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>textbox9</rd:DefaultName>
+                                        <rd:DefaultName>textbox12</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>#8fb3f3</BackgroundColor>
+                                          <BackgroundColor>#6e9eca</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="textbox13">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value />
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>textbox13</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <BackgroundColor>#6e9eca</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -375,7 +470,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.19in</Height>
+                                <Height>0.21in</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -389,7 +484,6 @@
                                                 <Value />
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>9pt</FontSize>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -397,39 +491,6 @@
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox3</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Color>LightGrey</Color>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                  <TablixCell>
-                                    <CellContents>
-                                      <Textbox Name="StateCode">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>=Fields!StateCode.Value</Value>
-                                                <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>9pt</FontSize>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style />
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>StateCode</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
@@ -455,11 +516,12 @@
                                                 <Value>=Fields!StateName.Value</Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>9pt</FontSize>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>StateName</rd:DefaultName>
@@ -488,14 +550,83 @@
                                                 <Value>=Fields!CityName.Value</Value>
                                                 <Style>
                                                   <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>9pt</FontSize>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>CityName</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="LocationCode">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!LocationCode.Value</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>LocationCode</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="LocationName">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!LocationName.Value</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>LocationName</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
@@ -515,6 +646,7 @@
                           </TablixBody>
                           <TablixColumnHierarchy>
                             <TablixMembers>
+                              <TablixMember />
                               <TablixMember />
                               <TablixMember />
                               <TablixMember />
@@ -565,8 +697,8 @@
                           </TablixRowHierarchy>
                           <DataSetName>DataSet1</DataSetName>
                           <Top>0.5in</Top>
-                          <Height>0.62in</Height>
-                          <Width>4in</Width>
+                          <Height>0.64in</Height>
+                          <Width>6.225in</Width>
                           <ZIndex>1</ZIndex>
                           <Style />
                         </Tablix>
@@ -610,20 +742,21 @@
         <PageBreak>
           <BreakLocation>End</BreakLocation>
         </PageBreak>
-        <Top>0.33in</Top>
-        <Height>1.12in</Height>
-        <Width>5in</Width>
+        <Top>0.37in</Top>
+        <Height>1.14in</Height>
+        <Width>6.225in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <FontFamily>Tahoma</FontFamily>
-          <FontSize>12pt</FontSize>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.45in</Height>
+    <Height>1.51in</Height>
     <Style />
   </Body>
-  <Width>5in</Width>
+  <Width>6.225in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -636,29 +769,35 @@
     <DataSource Name="HRDB">
       <DataSourceReference>HRDB</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>f2bfffca-847f-40d9-9e5a-9e98d4cb87b2</rd:DataSourceID>
+      <rd:DataSourceID>93102414-500b-4ec1-b2cd-e219d9da3b91</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HRDB</DataSourceName>
-        <CommandText>SELECT  cn.ID		AS ContinentID		,
-		cn.Name		AS ContinentName	,
-		cu.ID		AS CountryID		,
-		cu.Name		AS CountryName		,
-		st.ID		AS StateID			,
-		st.Code		AS StateCode		,
-		st.Name     AS StateName		,
-		c.ID		AS CityID			,
-		c.Name		AS CityName	
+        <CommandText>SELECT  cn.ID			AS ContinentID		,
+		cn.Name			AS ContinentName	,
+		cu.ID			AS CountryID		,
+		cu.Name			AS CountryName		,
+		st.ID			AS StateID			,
+		st.Code			AS StateCode		,
+		st.Name			AS StateName		,
+		c.ID			AS CityID			,
+		c.Name			AS CityName			,
+		ol.ID			AS LocationID		,
+		ol.Code			AS LocationCode		,
+		ol.Description	AS LocationName	
 FROM  dbo.Continent cn
-LEFT JOIN dbo.Country cu
+INNER JOIN dbo.Country cu
 	ON cn.ID	=	cu.ContinentID
-LEFT JOIN dbo.State st
+INNER JOIN dbo.State st
 	ON cu.ID	=	st.CountryID
-LEFT JOIN dbo.City c
-	ON c.StateID		=	st.ID </CommandText>
+INNER JOIN dbo.City c
+	ON c.StateID		=	st.ID 
+INNER JOIN dbo.OfficeLocation ol
+	ON c.ID		=	ol.CityID 
+ORDER BY cn.ID</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -698,11 +837,23 @@ LEFT JOIN dbo.City c
           <DataField>CityName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="LocationID">
+          <DataField>LocationID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LocationCode">
+          <DataField>LocationCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LocationName">
+          <DataField>LocationName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>e2bdc3f6-4ab1-494c-9028-c6b2de109831</rd:ReportID>
+  <rd:ReportID>948532e6-3bf3-4d41-9da5-d0ad1d6eef1f</rd:ReportID>
 </Report>
