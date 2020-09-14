@@ -253,6 +253,9 @@
                                     <CellContents>
                                       <Textbox Name="textbox8">
                                         <CanGrow>true</CanGrow>
+                                        <UserSort>
+                                          <SortExpression>=Fields!LocationName.Value</SortExpression>
+                                        </UserSort>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -776,28 +779,8 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HRDB</DataSourceName>
-        <CommandText>SELECT  cn.ID			AS ContinentID		,
-		cn.Name			AS ContinentName	,
-		cu.ID			AS CountryID		,
-		cu.Name			AS CountryName		,
-		st.ID			AS StateID			,
-		st.Code			AS StateCode		,
-		st.Name			AS StateName		,
-		c.ID			AS CityID			,
-		c.Name			AS CityName			,
-		ol.ID			AS LocationID		,
-		ol.Code			AS LocationCode		,
-		ol.Description	AS LocationName	
-FROM  dbo.Continent cn
-INNER JOIN dbo.Country cu
-	ON cn.ID	=	cu.ContinentID
-INNER JOIN dbo.State st
-	ON cu.ID	=	st.CountryID
-INNER JOIN dbo.City c
-	ON c.StateID		=	st.ID 
-INNER JOIN dbo.OfficeLocation ol
-	ON c.ID		=	ol.CityID 
-ORDER BY cn.ID</CommandText>
+        <CommandText>SELECT	*
+FROM	dbo.v_LocationDrilldown</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
