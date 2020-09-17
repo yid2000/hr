@@ -1,4 +1,4 @@
-/*
+/*--xxx
 SELECT * FROM Department
 SELECT * FROM EmploymentType
 SELECT * FROM TerminationReason
