@@ -111,7 +111,6 @@
                         <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                   <DataElementOutput>Output</DataElementOutput>
                 </TablixCell>
@@ -218,6 +217,7 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
+                  <rd:Selected>true</rd:Selected>
                 </CellContents>
               </TablixHeader>
               <DataElementOutput>Output</DataElementOutput>
@@ -258,12 +258,18 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HRDB</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@EmpNo">
+            <Value>=Parameters!EmpNo.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
         <CommandText>SELECT	CONCAT(e.EmpNo, ' : ', e.FirstName, ' ', e.MiddleName, ' ', e.LastName) AS EmpID_FullName	,
 		FORMAT(ep.FromDate, 'MMMM') AS Month	,
 		ep.PaycheckAmount
 FROM	dbo.Employee e
 INNER JOIN EmployeePaycheck ep
-	ON	e.ID	=	ep.EmpID</CommandText>
+	ON	e.ID	=	ep.EmpID
+WHERE e.EmpNo  = @EmpNo</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -282,6 +288,21 @@ INNER JOIN EmployeePaycheck ep
       </Fields>
     </DataSet>
   </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="EmpNo">
+      <DataType>String</DataType>
+      <Prompt>Emp No</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DisplayFullName">
+      <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DisplayFullName</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

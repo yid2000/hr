@@ -698,7 +698,7 @@
                               </TablixMember>
                             </TablixMembers>
                           </TablixRowHierarchy>
-                          <DataSetName>DataSet1</DataSetName>
+                          <DataSetName>LocationsDS</DataSetName>
                           <Top>0.5in</Top>
                           <Height>0.64in</Height>
                           <Width>6.225in</Width>
@@ -741,7 +741,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
+        <DataSetName>LocationsDS</DataSetName>
         <PageBreak>
           <BreakLocation>End</BreakLocation>
         </PageBreak>
@@ -776,11 +776,24 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="LocationsDS">
       <Query>
         <DataSourceName>HRDB</DataSourceName>
-        <CommandText>SELECT	*
-FROM	dbo.v_LocationDrilldown</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@StateCode">
+            <Value>=Parameters!StateCode.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+          <QueryParameter Name="@CityName">
+            <Value>=Parameters!CityName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@IsWildcardSearch">
+            <Value>=Parameters!IsWildcardSearch.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>prc_LocationDrilldownByCity</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -834,7 +847,59 @@ FROM	dbo.v_LocationDrilldown</CommandText>
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="StatesDS">
+      <Query>
+        <DataSourceName>HRDB</DataSourceName>
+        <CommandText>SELECT * FROM dbo.State</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Code">
+          <DataField>Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CountryID">
+          <DataField>CountryID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="CityName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>City Name</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="IsWildcardSearch">
+      <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Is Wildcard Search</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StateCode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>State Code</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>StatesDS</DataSetName>
+          <ValueField>Code</ValueField>
+          <LabelField>Code</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

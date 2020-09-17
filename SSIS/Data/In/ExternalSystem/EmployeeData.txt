@@ -1,21 +1,21 @@
-Emp ID	Full Name	Employment Type Code	Employment Type Desc	Department Code	Department Desc	Location Code	Location Desc	Work Address	Home Address	Hire Date	Termination Date	Termination Reason	Annual Salary	Annual Salary Start Date
-5001	FN:5001 A  LN:5001	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105001	1/1/2020
-5002	FN:5002 A  LN:5002	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105002	1/1/2020
-5003	FN:5003 A  LN:5003	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105003	1/1/2020
-5004	FN:5004 A  LN:5004	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105004	1/1/2020
-5005	FN:5005 A  LN:5005	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105005	1/1/2020
-5006	FN:5006 A  LN:5006	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105006	1/1/2020
-5007	FN:5007 A  LN:5007	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105007	1/1/2020
-5008	FN:5008 A  LN:5008	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105008	1/1/2020
-5009	FN:5009 A  LN:5009	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105009	1/1/2020
-5010	FN:5010 A  LN:5010	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105010	1/1/2020
-5011	FN:5011 A  LN:5011	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105011	1/1/2020
-5012	FN:5012 A  LN:5012	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105012	1/1/2020
-5013	FN:5013 A  LN:5013	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105013	1/1/2020
-5014	FN:5014 A  LN:5014	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105014	1/1/2020
-5015	FN:5015 A  LN:5015	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105015	1/1/2020
-5016	FN:5016 A  LN:5016	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105016	1/1/2020
-5017	FN:5017 A  LN:5017	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105017	1/1/2020
-5018	FN:5018 A  LN:5018	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105018	1/1/2020
-5019	FN:5019 A  LN:5019	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105019	1/1/2020
-5020	FN:5020 A  LN:5020	FTE	Full Time Employee	IT	Information Technology	SFO1	San Francisco : Market Street	"111 Market St, San Francisco 99999"	"222 Home St, HomeTown 11111"	1/1/2020			105020	1/1/2020
+Emp ID	Full Name	Employment Type Code	Department Code	Location Code	Work Address	Home Address	Hire Date	Termination Date	Termination Reason	Annual Salary
+5001	FN:5001 A  LN:5001	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105001
+5002	FN:5002 A  LN:5002	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105002
+5003	FN:5003 A  LN:5003	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105003
+5004	FN:5004 A  LN:5004	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105004
+5005	FN:5005 A  LN:5005	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105005
+5006	FN:5006 A  LN:5006	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105006
+5007	FN:5007 A  LN:5007	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105007
+5008	FN:5008 A  LN:5008	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105008
+5009	FN:5009 A  LN:5009	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105009
+5010	FN:5010 A  LN:5010	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105010
+5011	FN:5011 A  LN:5011	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105011
+5012	FN:5012 A  LN:5012	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105012
+5013	FN:5013 A  LN:5013	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105013
+5014	FN:5014 A  LN:5014	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105014
+5015	FN:5015 A  LN:5015	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105015
+5016	FN:5016 A  LN:5016	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105016
+5017	FN:5017 A  LN:5017	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105017
+5018	FN:5018 A  LN:5018	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105018
+5019	FN:5019 A  LN:5019	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105019
+5020	FN:5020 A  LN:5020	FTE	IT	SFO1	111 Market St<comma> San Francisco 99999	222 Home St<comma> HomeTown 11111	1/1/2020			105020

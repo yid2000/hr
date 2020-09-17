@@ -27,6 +27,10 @@
       <FullPath>EmployeePaycheckByMonthMatrix.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>LocationsDrilldown.rdl</Name>
+      <FullPath>LocationsDrilldown.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>PaycheckSummaryByEmp.rdl</Name>
       <FullPath>PaycheckSummaryByEmp.rdl</FullPath>
     </ProjectItem>
@@ -43,8 +47,8 @@
       <FullPath>SimpleReport.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>LocationsDrilldown.rdl</Name>
-      <FullPath>LocationsDrilldown.rdl</FullPath>
+      <Name>EmployeeDetailsWithSubReport.rdl</Name>
+      <FullPath>EmployeeDetailsWithSubReport.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

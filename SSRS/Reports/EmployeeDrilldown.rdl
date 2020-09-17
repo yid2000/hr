@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Employee Drilldown</Value>
+                <Value>Employee Pay Drilldown</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>18pt</FontSize>
@@ -34,7 +34,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>7.40833in</Width>
+              <Width>8.525in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -93,6 +93,9 @@
                               <TablixColumn>
                                 <Width>1in</Width>
                               </TablixColumn>
+                              <TablixColumn>
+                                <Width>1.11667in</Width>
+                              </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
                               <TablixRow>
@@ -116,7 +119,9 @@
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox2</rd:DefaultName>
@@ -153,7 +158,7 @@
                                               </TextRun>
                                             </TextRuns>
                                             <Style>
-                                              <TextAlign>Right</TextAlign>
+                                              <TextAlign>Center</TextAlign>
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
@@ -190,7 +195,9 @@
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox5</rd:DefaultName>
@@ -226,7 +233,9 @@
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                           <Paragraph>
                                             <TextRuns>
@@ -276,7 +285,9 @@
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                           <Paragraph>
                                             <TextRuns>
@@ -326,10 +337,50 @@
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>textbox8</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>DimGray</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <BackgroundColor>#1c3a70</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox14">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Total Paid Amt</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontSize>11pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Color>White</Color>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox14</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>DimGray</Color>
@@ -560,6 +611,40 @@
                                       </Textbox>
                                     </CellContents>
                                   </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox15">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value />
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <Color>White</Color>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox15</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>DimGray</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <BackgroundColor>#60759b</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
@@ -757,12 +842,47 @@
                                       </Textbox>
                                     </CellContents>
                                   </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="TotalPaycheckAmount">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!TotalPaycheckAmount.Value</Value>
+                                                <Style>
+                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>TotalPaycheckAmount</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Color>DimGray</Color>
+                                            <Style>Solid</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                          <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
                                 </TablixCells>
                               </TablixRow>
                             </TablixRows>
                           </TablixBody>
                           <TablixColumnHierarchy>
                             <TablixMembers>
+                              <TablixMember />
                               <TablixMember />
                               <TablixMember />
                               <TablixMember />
@@ -816,7 +936,7 @@
                           <DataSetName>DataSet1</DataSetName>
                           <Top>0.5in</Top>
                           <Height>0.64in</Height>
-                          <Width>7.40833in</Width>
+                          <Width>8.525in</Width>
                           <ZIndex>1</ZIndex>
                           <Style />
                         </Tablix>
@@ -862,7 +982,7 @@
         </PageBreak>
         <Top>0.33in</Top>
         <Height>1.14in</Height>
-        <Width>7.40833in</Width>
+        <Width>8.525in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <FontFamily>Tahoma</FontFamily>
@@ -873,7 +993,7 @@
     <Height>1.47in</Height>
     <Style />
   </Body>
-  <Width>7.40833in</Width>
+  <Width>8.525in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -893,24 +1013,13 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HRDB</DataSourceName>
-        <CommandText>SELECT	co.Name			AS	Continent_Name	,
-		c.Name			AS	Country_Name	,
-		s.Name			AS	State_Name		,
-		ci.Name			AS	City_Name		,
-		l.Description	AS	Location_Desc	,
-		e.EmpNo								,
-		CONCAT(e.FirstName, ' ', e.MiddleName, ' ', e.LastName) AS FullName
-FROM	dbo.Employee e
-INNER JOIN dbo.OfficeLocation l
-	ON	e.OfficeLocationID	=	l.ID
-INNER JOIN dbo.City ci
-	ON	l.CityID	=	ci.ID
-INNER JOIN dbo.State s
-	ON	ci.StateID	=	s.ID
-INNER JOIN dbo.Country c
-	ON	s.CountryID	=	c.ID
-INNER JOIN dbo.Continent co
-	ON	c.ContinentID	=	co.ID</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@FullNameFormat">
+            <Value>=Parameters!FullNameFormat.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>prc_EmployeePayCheckAmtDrilldown</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -942,9 +1051,19 @@ INNER JOIN dbo.Continent co
           <DataField>FullName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="TotalPaycheckAmount">
+          <DataField>TotalPaycheckAmount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="FullNameFormat">
+      <DataType>Integer</DataType>
+      <Prompt>Full Name Format</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <EmbeddedImages>
     <EmbeddedImage Name="PeopleImage">
       <MIMEType>image/jpeg</MIMEType>

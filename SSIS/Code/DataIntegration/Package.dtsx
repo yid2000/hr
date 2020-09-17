@@ -11,16 +11,16 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{C2479A4F-1034-4CCB-9E68-A48405147C8D}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{6CDC80B3-B251-4617-AF6B-1195AA23FAA9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{4ABBAF61-1AA4-4D6C-B99F-D430E758BD2F}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:ObjectName="EmployeeDataCsvFileConnectionMgr">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,133 +30,70 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Me\Tech\LK\SqlServer\HRDB\SSIS\Data\In\ExternalSystem\EmployeeData.txt">
+          DTS:ConnectionString="C:\Me\Tech\LK\SqlServer\HRDB\hr\SSIS\Data\In\ExternalSystem\EmployeeData.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Emp ID"
-              DTS:DTSID="{2D26B913-356A-4D18-B0EE-793C2F8D1E61}"
+              DTS:DTSID="{A06628D6-F2C0-438B-9D1C-AF0DD665A028}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Full Name"
-              DTS:DTSID="{3B49851E-6294-41AA-BB2C-06FC8BC6B1FA}"
+              DTS:DTSID="{CFE94A12-6EBA-4353-B330-1C5DAFD8ECA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Employment Type Code"
-              DTS:DTSID="{E85FC2B3-9616-45E7-80A4-7EC846C75B10}"
+              DTS:DTSID="{B50BBFCD-1D0E-473C-AA11-6A7FCF404FC2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Employment Type Desc"
-              DTS:DTSID="{78228DDC-7118-4018-867C-4B28FFFDD9EC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Department Code"
-              DTS:DTSID="{BBB474D7-E1B6-4654-84CE-490198C4906B}"
+              DTS:DTSID="{B49A2D68-90EF-4757-89B9-B882371BEDD5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Department Desc"
-              DTS:DTSID="{0B250E01-3CD4-4CA3-810D-EC9CB0CCDB2C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location Code"
-              DTS:DTSID="{F59DC366-D46C-4DE7-BF9B-9A6D6FB14192}"
+              DTS:DTSID="{C3F3E077-4CE5-480E-8B80-1BAD0850180D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Location Desc"
-              DTS:DTSID="{6478AB44-5B65-4688-A6A5-9DD35BE61B24}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Work Address"
-              DTS:DTSID="{0313D226-D73A-454C-BC11-0B3820859ED5}"
+              DTS:DTSID="{01A3AF95-4338-40C5-BBE3-DB355B3972ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Home Address"
-              DTS:DTSID="{024DF806-F3CD-428E-A272-76ED10903A85}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Hire Date"
-              DTS:DTSID="{5B589E39-E62B-4580-8A8B-B488FA9B6045}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Termination Date"
-              DTS:DTSID="{AB719C7F-73AE-405D-B401-20A2BA8C9ED1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Termination Reason"
-              DTS:DTSID="{7C063B35-8F5B-4C5D-B0CA-610F0357E16A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Annual Salary"
-              DTS:DTSID="{7E1531AA-492C-4427-BA33-8FAB884EE8DB}"
+              DTS:DTSID="{77C178A4-F010-4417-8D0E-7794B73DE312}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -164,110 +101,42 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Annual Salary Start Date"
-              DTS:DTSID="{EDC9204F-039B-49FB-9512-AEC634414CB5}"
+              DTS:ObjectName="Annual Salary"
+              DTS:DTSID="{CE151391-F710-4179-B4E8-67BD8C0295C5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.ETLDB1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
+      DTS:ObjectName="localhost.ETLDB1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=ETLDB;Integrated Security=True;Application Name=SSIS-Package-{C20F5384-9B29-45A6-AD04-F2EB45E767E0}localhost.ETLDB1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Load Employee Data CSV File"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{215D1E0C-5DB4-4D69-8A9B-EF5149521FFE}"
+      DTS:DTSID="{27B68A16-E5D8-4FF5-B7A6-86846555259A}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task">
+      DTS:ObjectName="Load Employee Data CSV File"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Data Conversion"
-              componentClassID="Microsoft.DataConvert"
-              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Data Conversion"
-              name="Data Conversion"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
-                  name="Data Conversion Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Employment Type Code]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Employment Type Code"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
-                  exclusionGroup="1"
-                  name="Data Conversion Output"
-                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Target Employment Type Code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Target Employment Type Code]"
-                      name="Target Employment Type Code"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Data Conversion Error Output"
-                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Load Employee Data CSV File\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -287,25 +156,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  refId="Package\Load Employee Data CSV File\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
+                  connectionManagerRefId="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Emp ID]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Emp ID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Emp ID]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Emp ID]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Emp ID]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Emp ID]"
                       name="Emp ID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -320,14 +189,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Full Name]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Full Name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Full Name]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Full Name]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Full Name]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Full Name]"
                       name="Full Name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -342,14 +211,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Code]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Code]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]"
                       name="Employment Type Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -364,36 +233,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Desc]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Department Code]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Desc]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Code]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Desc]"
-                      name="Employment Type Desc"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Department Code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Code]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Department Code]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Department Code]"
                       name="Department Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -408,36 +255,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Department Desc]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Location Code]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Desc]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Code]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Department Desc]"
-                      name="Department Desc"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Location Code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Code]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Location Code]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Location Code]"
                       name="Location Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -452,36 +277,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Location Desc]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Work Address]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Desc]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Work Address]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Location Desc]"
-                      name="Location Desc"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Work Address]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Work Address]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Work Address]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Work Address]"
                       name="Work Address"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -496,14 +299,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Home Address]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Home Address]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Home Address]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Home Address]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Home Address]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Home Address]"
                       name="Home Address"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -518,103 +321,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hire Date]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hire Date]"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hire Date]"
-                      name="Hire Date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Termination Date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Termination Date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Termination Date]"
-                      name="Termination Date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Termination Reason]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Termination Reason]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Termination Reason]"
-                      name="Termination Reason"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary]"
                       name="Annual Salary"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary Start Date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary Start Date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Annual Salary Start Date]"
-                      name="Annual Salary Start Date"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -631,119 +346,260 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Emp ID]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Emp ID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Emp ID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Full Name]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Full Name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Full Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Code]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Employment Type Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Employment Type Desc]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Employment Type Desc" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Code]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Department Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Department Desc]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Department Desc" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Code]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Location Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Desc]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Location Desc" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Work Address]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Work Address]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Work Address" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Home Address]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Home Address]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Home Address" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hire Date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Hire Date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Termination Date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Termination Date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Termination Reason]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Termination Reason" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Annual Salary" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual Salary Start Date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Annual Salary Start Date" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Employee Data CSV File\Load Data Into Employee Table"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Load Data Into Employee Table"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Employee"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.ETLDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.ETLDB1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Emp ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Emp ID"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[EmpNo]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Emp ID]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Full Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Full Name"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[FullName]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Full Name]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Employment Type Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Employment Type Code"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[EmploymentTypeCode]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Employment Type Code]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Department Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Department Code"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[DeptCode]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Department Code]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Location Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Location Code"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[OfficeLocationCode]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Location Code]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Work Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Work Address"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[WorkAddress]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Work Address]" />
+                    <inputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].Columns[Home Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Home Address"
+                      externalMetadataColumnId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[HomeAddress]"
+                      lineageId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output].Columns[Home Address]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[EmpNo]"
+                      dataType="i4"
+                      name="EmpNo" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[FullName]"
+                      dataType="wstr"
+                      length="100"
+                      name="FullName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[EmploymentTypeCode]"
+                      dataType="wstr"
+                      length="5"
+                      name="EmploymentTypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[DeptCode]"
+                      dataType="wstr"
+                      length="5"
+                      name="DeptCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[OfficeLocationCode]"
+                      dataType="wstr"
+                      length="5"
+                      name="OfficeLocationCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[WorkAddress]"
+                      dataType="wstr"
+                      length="1000"
+                      name="WorkAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[HomeAddress]"
+                      dataType="wstr"
+                      length="1000"
+                      name="HomeAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[HireDate]"
+                      dataType="dbTimeStamp"
+                      name="HireDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[TerminationDate]"
+                      dataType="dbTimeStamp"
+                      name="TerminationDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input].ExternalColumns[TerminationReasonCode]"
+                      dataType="wstr"
+                      length="5"
+                      name="TerminationReasonCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -754,15 +610,57 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              refId="Package\Load Employee Data CSV File.Paths[Flat File Source Output]"
+              endId="Package\Load Employee Data CSV File\Load Data Into Employee Table.Inputs[ADO NET Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Load Employee Data CSV File\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{8CAE15D0-EF7D-4988-B02E-3EB696303E39}"
+      DTS:EventID="-1073741823"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{A5CC8B80-DA09-45B4-BC5C-52FF3CAF3EC2}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{7CA48F86-861D-441C-AE17-B8C44507A877}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="SqlStatementSource">"INSERT INTO PackageError VALUES('" + @[System::PackageID] + "','" + @[System::MachineName] + "','" + @[System::PackageName] + "','" + @[System::TaskName] + "'," + (DT_WSTR,12)@[System::ErrorCode] + ",'" + @[System::ErrorDescription] + "', GETDATE())"</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
+              SQLTask:SqlStatementSource="INSERT INTO PackageError VALUES('{FB55BDEB-D9CC-4910-8773-F50220546E5D}','AALK','Package','Execute SQL Task',0,'', GETDATE())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -776,51 +674,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Task"
-          TopLeft="5.5,5.5" />
+          Size="219.2,41.6"
+          Id="Package\Load Employee Data CSV File"
+          TopLeft="93.1428587290706,56.8941184449774" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Load Employee Data CSV File">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="200.8,36.8" />
+          Id="Package\Load Employee Data CSV File\Flat File Source"
+          TopLeft="309.600001975468,71.2941172781287" />
         <NodeLayout
-          Size="156.8,41.6"
-          Id="Package\Data Flow Task\Data Conversion"
-          TopLeft="215.2,110.4" />
+          Size="228.8,41.6"
+          Id="Package\Load Employee Data CSV File\Load Data Into Employee Table"
+          TopLeft="278.285719024892,170.07059062047" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="276.8,78.4">
+          Id="Package\Load Employee Data CSV File.Paths[Flat File Source Output]"
+          TopLeft="389.14286050018,112.894117278129">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="16.8,32"
+              EndConnector="0,57.1764733423412"
               Start="0,0"
-              End="16.8,24.5">
+              End="0,49.6764733423412">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12"
-                    Point2="0,16"
-                    Point3="4,16" />
-                  <mssgle:LineSegment
-                    End="12.8,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.8,16"
-                    Point2="16.8,16"
-                    Point3="16.8,20" />
-                  <mssgle:LineSegment
-                    End="16.8,24.5" />
+                    End="0,49.6764733423412" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -832,5 +718,25 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Employee Data CSV File\Load Data Into Employee Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="306.4,120" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

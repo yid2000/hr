@@ -635,8 +635,12 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="HRDB">
-      <DataSourceReference>HRDB</DataSourceReference>
-      <rd:SecurityType>None</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=localhost;Initial Catalog=HRDB</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>8dbb6bfe-ab86-4f2d-9ba9-5122f5c10886</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -654,8 +658,7 @@ FROM	dbo.Employee e
 INNER JOIN dbo.EmploymentType et
 	ON	e.EmploymentTypeID	=	et.ID
 LEFT JOIN dbo.TerminationReason tr
-	ON	e.TerminationReasonID	=	tr.ID
-</CommandText>
+	ON	e.TerminationReasonID	=	tr.ID</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
