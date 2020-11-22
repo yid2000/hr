@@ -5,22 +5,32 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="AALK"
   DTS:CreatorName="AALK\AANN"
-  DTS:DTSID="{FB55BDEB-D9CC-4910-8773-F50220546E5D}"
+  DTS:DTSID="{1D4FD4CC-5E4F-43D4-84E5-E34EF06909C3}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="12.0.6024.0"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="LoadEmployeeDataFromFile"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{6CDC80B3-B251-4617-AF6B-1195AA23FAA9}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{6D5DD6E9-1212-4D59-B1AD-D91A0D2176AE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
+      DTS:refId="Package.ConnectionManagers[localhost.ETLDB1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
+      DTS:ObjectName="localhost.ETLDB1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=ETLDB;Integrated Security=True;Application Name=SSIS-Package-{C20F5384-9B29-45A6-AD04-F2EB45E767E0}localhost.ETLDB1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceEmployeeDataCsvFileConnectionMgr]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{4ABBAF61-1AA4-4D6C-B99F-D430E758BD2F}"
-      DTS:ObjectName="EmployeeDataCsvFileConnectionMgr">
+      DTS:ObjectName="SourceEmployeeDataCsvFileConnectionMgr">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -39,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Emp ID"
-              DTS:DTSID="{A06628D6-F2C0-438B-9D1C-AF0DD665A028}"
+              DTS:DTSID="{C6244CD1-CA19-458E-B1AA-BBA75D22F051}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Full Name"
-              DTS:DTSID="{CFE94A12-6EBA-4353-B330-1C5DAFD8ECA8}"
+              DTS:DTSID="{E4663480-187B-49E4-B382-8D69AF261BD3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Employment Type Code"
-              DTS:DTSID="{B50BBFCD-1D0E-473C-AA11-6A7FCF404FC2}"
+              DTS:DTSID="{F9B8FA2E-0EC1-4E3B-A5A9-9C35475086BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Department Code"
-              DTS:DTSID="{B49A2D68-90EF-4757-89B9-B882371BEDD5}"
+              DTS:DTSID="{FF91EF1B-43C1-4FB2-A8BD-D309692BA57F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location Code"
-              DTS:DTSID="{C3F3E077-4CE5-480E-8B80-1BAD0850180D}"
+              DTS:DTSID="{6DDB9863-2CD1-44C4-9E35-CD2D52A1A288}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Work Address"
-              DTS:DTSID="{01A3AF95-4338-40C5-BBE3-DB355B3972ED}"
+              DTS:DTSID="{71C38C75-55B7-49B2-87F1-C05093ABA66A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Home Address"
-              DTS:DTSID="{77C178A4-F010-4417-8D0E-7794B73DE312}"
+              DTS:DTSID="{59D74DCC-FBF5-40EB-86B2-035E4E9260F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,25 +112,135 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Annual Salary"
-              DTS:DTSID="{CE151391-F710-4179-B4E8-67BD8C0295C5}"
+              DTS:DTSID="{7E575343-10EA-4717-85F4-0A05B8FB8E49}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.ETLDB1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
-      DTS:ObjectName="localhost.ETLDB1">
+      DTS:refId="Package.ConnectionManagers[TruncateTables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{76F7C061-630A-4F95-9765-E86F08AB354B}"
+      DTS:ObjectName="TruncateTables.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=ETLDB;Integrated Security=True;Application Name=SSIS-Package-{C20F5384-9B29-45A6-AD04-F2EB45E767E0}localhost.ETLDB1;" />
+          DTS:ConnectionString="C:\Me\Tech\LK\SqlServer\HRDB\hr\SSIS\Code\DataIntegration\TruncateTables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WorkInProgressEmployeeDataCsvFileConnectionMgr]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{550EE4DC-3C58-4161-B0D0-93CB15EB4E1E}"
+      DTS:ObjectName="WorkInProgressEmployeeDataCsvFileConnectionMgr">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Me\Tech\LK\SqlServer\HRDB\hr\SSIS\Data\WorkInProgress\EmployeeData.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Emp ID"
+              DTS:DTSID="{B0B5EE5B-1EE5-4BFC-A513-85742C2FB22A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Full Name"
+              DTS:DTSID="{4037FF87-BE6E-48BE-97C9-2785F6723F94}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Employment Type Code"
+              DTS:DTSID="{B342CFD0-9798-48EF-B7DD-7BBC85BF991B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Department Code"
+              DTS:DTSID="{3A2D6796-BE42-4FE3-8F99-6FB4480BBE8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location Code"
+              DTS:DTSID="{6579B7C1-ECD6-4F26-905F-66D43EBB99A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Work Address"
+              DTS:DTSID="{8B2C6326-BF2A-4B54-A339-9A517D185CBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Home Address"
+              DTS:DTSID="{3A3343EF-5778-425D-A1B4-5B88BFA15FEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Annual Salary"
+              DTS:DTSID="{6A857309-B6B5-4DA0-9E3A-87C9681C3143}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Copy File From Source"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="Copy File From Source To Destination"
+      DTS:DTSID="{FD72D536-CA9D-4FD5-A9E3-B371C194A4ED}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Copy File From Source"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="{4ABBAF61-1AA4-4D6C-B99F-D430E758BD2F}"
+          TaskDestinationPath="{550EE4DC-3C58-4161-B0D0-93CB15EB4E1E}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Load Employee Data CSV File"
       DTS:CreationName="Microsoft.Pipeline"
@@ -157,8 +277,8 @@
               <connections>
                 <connection
                   refId="Package\Load Employee Data CSV File\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
-                  connectionManagerRefId="Package.ConnectionManagers[EmployeeDataCsvFileConnectionMgr]"
+                  connectionManagerID="Package.ConnectionManagers[WorkInProgressEmployeeDataCsvFileConnectionMgr]"
+                  connectionManagerRefId="Package.ConnectionManagers[WorkInProgressEmployeeDataCsvFileConnectionMgr]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -618,7 +738,43 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Truncate Tables - Employee and Package Error"
+      DTS:DTSID="{EBEE8470-CADE-43C1-BD3D-ABFB47D0B6EC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="TruncateTables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{95695CCD-5576-4CB8-BEF8-6C8B3A07FE86}"
+      DTS:From="Package\Copy File From Source"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load Employee Data CSV File" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{9C1D72C5-0DC0-463C-8652-6EAC10DC4648}"
+      DTS:From="Package\Truncate Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Copy File From Source" />
+  </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
@@ -655,7 +811,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C20F5384-9B29-45A6-AD04-F2EB45E767E0}"
-              SQLTask:SqlStatementSource="INSERT INTO PackageError VALUES('{FB55BDEB-D9CC-4910-8773-F50220546E5D}','AALK','Package','Execute SQL Task',0,'', GETDATE())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="INSERT INTO PackageError VALUES('{1D4FD4CC-5E4F-43D4-84E5-E34EF06909C3}','AALK','LoadEmployeeDataFromFile','Execute SQL Task',0,'', GETDATE())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -672,14 +828,78 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="185.6,41.6"
+          Id="Package\Copy File From Source"
+          TopLeft="125.500002043588,83.6647061483258" />
         <NodeLayout
           Size="219.2,41.6"
           Id="Package\Load Employee Data CSV File"
-          TopLeft="93.1428587290706,56.8941184449774" />
+          TopLeft="102.85714460879,153.600002041985" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Truncate Tables"
+          TopLeft="129.142859342147,10.8235294289242" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="215.378573326189,125.264706148326">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.3352958936594"
+              Start="0,0"
+              End="0,20.8352958936594">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.8352958936594" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="214.921430692867,52.4235294289242">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.2411767194016"
+              Start="0,0"
+              End="0,23.7411767194016">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.7411767194016" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="306.4,120" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\Load Employee Data CSV File">
     <LayoutInfo>
@@ -726,17 +946,5 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package.EventHandlers[OnError]\Execute SQL Task"
-          TopLeft="306.4,120" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
